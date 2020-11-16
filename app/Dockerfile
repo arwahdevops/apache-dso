@@ -20,9 +20,7 @@ RUN     \
         && add-apt-repository -y ppa:ondrej/apache2 \
         && apt-get update \
     && apt-get install -y \
-    fuse \
     wget \
-    nano \
     cron \
     curl \
     apache2 \
