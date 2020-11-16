@@ -42,8 +42,6 @@ RUN     \
     php-pear \
     # Apache settings
     && a2enmod rewrite php7.4 \
-        # Install composer
-        && curl -sS https://getcomposer.org/installer | php -- --version=1.8.4 --install-dir=/usr/local/bin --filename=composer \
         # Cleaning
         && apt-get purge -y --auto-remove $BUILD_DEPS \
         && apt-get autoremove -y \
