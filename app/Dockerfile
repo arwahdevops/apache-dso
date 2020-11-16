@@ -21,7 +21,7 @@ RUN     \
         && apt-get update \
     && apt-get install -y \
     wget \
-    cron \
+    nano \
     curl \
     apache2 \
     libapache2-mod-php7.4 \
